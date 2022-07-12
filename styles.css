@@ -1,0 +1,142 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--very-dark-blue);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 15px;
+    margin: 0;
+}
+
+main {
+    background-color: var(--dark-blue);
+    width: 90%;
+    padding: 2rem;
+    border-radius: 1rem;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    max-width: 400px;
+}
+
+.star {
+    background-color: hsl(214, 19%, 22%);
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+.star img {
+    margin: auto;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+p {
+    color: var(--light-grey);
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+.number {
+    background-color: hsl(214, 19%, 22%);
+    padding: 1rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: var(--light-grey);
+    font-weight: 700;
+}
+
+.number:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.selected {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+.thank-you {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.rating-msg {
+    background-color: hsl(214, 19%, 22%);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+#rating {
+    margin: 0.25rem;
+}
+
+.thank-you h1 {
+    margin-bottom: 1rem;
+}
+
+#submit {
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+
+#submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 400px) {
+    .number {
+        width: 14%;
+        aspect-ratio: 1;
+        height: auto;
+    }
+}
